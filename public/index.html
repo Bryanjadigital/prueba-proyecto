@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi recetario</title>
+  <link rel="stylesheet" href="/CSS/index.css">
+ <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mi recetario 🍽️🥮</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="/html/desayuno.html">Desayuno</a></li>
+          <li><a href="/html/almuerzo.html">Almuerzo</a></li>
+          <li><a href="/html/cena.html">Cena</a></li>
+          <li><a href="/html/postre.html">Postre</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenido-principal">
+      <!-- botones crud -->
+      <section class="crud-botones">
+        <button id="btn-agregar">➕ Agregar receta</button>
+        <button id="btn-ver">📄 Ver recetas</button>
+        <button id="btn-editar">✏️ Editar receta</button>
+        <button id="btn-eliminar">🗑️ Eliminar receta</button>
+      </section>
+
+      <!-- Aquí se mostrará la lista o formularios -->
+      <section id="contenido-dinamico">
+        <p>Selecciona una acción para ver o modificar recetas.</p>
+      </section>
+
+
+
+      <!-- panel lateral aside -->
+    </div>
+
+    <aside class="articulos">
+      <h2>Artículos Recientes</h2>
+      <ul>
+        <li><a href="#">Alimentar a nuestras mascotas?</a></li>
+        <li><a href="#">Cuánto debes llevarlo al veterinario?</a></li>
+        <li><a href="#">ebe ser el cuidado de la piel?</a></li>
+      </ul>
+   </aside>
+  </main>
+
+  <footer>
+    <p>Proyecto 2025</p>
+  </footer>
+
+<script src="/js/index.js"></script>
+<script src="/js/recetaCard.js"></script>
+</body>
+</html>

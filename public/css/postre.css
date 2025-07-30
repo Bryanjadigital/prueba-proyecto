@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  background-color: #FFF2EB;
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado {
+  background-color: #7965C1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.encabezado a {
+  background-color: #FFD586;
+  color: #263238;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+h1 {
+  text-align: left;
+  font-family: cursive;
+}
+
+.recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3 ease;
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.toggle{
+  background-color: #FFD586;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+.contenido-oculto {
+  display: none;
+  margin-top: 15px;
+}
+
+
+footer {
+  background-color: #7965C1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
