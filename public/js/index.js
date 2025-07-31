@@ -5,7 +5,7 @@ const templates = {
 
 
 document.getElementById('btn-ver').onclick = () => {
-  fetch('http://localhost:5000/api/recetas')
+  fetch('/api/recetas')
     .then(res => res.json())
     .then(data => {
       if (data.length === 0) {
@@ -92,7 +92,7 @@ document.getElementById('btn-agregar').onclick = () => {
     };
 
     // Enviar al backend
-    fetch('http://localhost:5000/api/recetas', {
+    fetch('/api/recetas', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -126,7 +126,7 @@ function mostrarFormularioEliminar(recetas) {
 
   document.getElementById('btn-confirmar-eliminar').onclick = () => {
     const idEliminar = document.getElementById('select-eliminar').value;
-    fetch(`http://localhost:5000/api/recetas/${idEliminar}`, {
+    fetch(`/api/recetas/${idEliminar}`, {
       method: 'DELETE'
     })
     .then(res => res.json())
@@ -143,7 +143,7 @@ function mostrarFormularioEliminar(recetas) {
 }
 
 document.getElementById('btn-eliminar').onclick = () => {
-  fetch('http://localhost:5000/api/recetas')
+  fetch('/api/recetas')
     .then(res => res.json())
     .then(data => {
       mostrarFormularioEliminar(data); // Pasa las recetas al formulario eliminar
@@ -239,7 +239,7 @@ function mostrarFormularioEditar(recetas) {
       imagen
     };
 
-    fetch(`http://localhost:5000/api/recetas/${id}`, {
+    fetch(`/api/recetas/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -260,7 +260,7 @@ function mostrarFormularioEditar(recetas) {
 
 // Evento para mostrar formulario editar
 document.getElementById('btn-editar').onclick = () => {
-  fetch('http://localhost:5000/api/recetas')
+  fetch('/api/recetas')
     .then(res => res.json())
     .then(data => {
       mostrarFormularioEditar(data);
