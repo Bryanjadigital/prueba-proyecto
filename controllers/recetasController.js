@@ -1,4 +1,4 @@
-const RecetaModel = require('../models/RecetaModel.js');
+const RecetaModel = require('../models/recetaModel.js');
 
 
 // Función que maneja la solicitud GET para obtener todas las recetas
